@@ -12,7 +12,7 @@ if 'GITHUB_ORG_READ' not in os.environ:
 g = Github(os.environ['GITHUB_ORG_READ'])
 
 # Get org
-nyt = g.get_organization('nytimes')
+nyt = g.get_organization('nytm')
 
 # Get teams list
 nyt_repos = nyt.get_repos(type="all")
